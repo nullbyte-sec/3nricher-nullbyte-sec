@@ -6,4 +6,4 @@ pytest-mock
 responses
 requests-cache
 fastapi
-uvicorn[standard]
+uvicorn[standard]==0.30.6
