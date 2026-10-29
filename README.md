@@ -13,9 +13,28 @@ techniques.
 
 Includes a one-command web GUI: clone, add your API keys, run `./3nricher.sh`, and a browser dashboard opens with live enrichment logs, risk scoring, source breakdowns, and IP geolocation.
 
-## One-command setup (web GUI)
+## Prerequisites
 
-Requires git, Python 3.10+, Node.js 18+ with npm, Docker (running), and make.
+Requires git, Python 3.10+, make, Docker (running), and Node.js 18+ with npm.
+
+On Debian/Ubuntu/Kali, install Node.js 20 LTS and npm via NodeSource (the distro `nodejs` package is often outdated):
+
+```bash
+sudo apt update
+sudo apt install -y curl ca-certificates
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+node -v && npm -v
+```
+
+Also make sure Docker is running:
+
+```bash
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+## One-command setup (web GUI)
 
 ```bash
 git clone https://github.com/nullbyte-sec/3nricher-nullbyte-sec.git
