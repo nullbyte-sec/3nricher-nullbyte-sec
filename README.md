@@ -20,6 +20,7 @@ Requires git, Python 3.10+, Node.js 18+ with npm, Docker (running), and make.
 ```bash
 git clone https://github.com/nullbyte-sec/3nricher-nullbyte-sec.git
 cd 3nricher-nullbyte-sec
+chmod +x 3nricher.sh
 ./3nricher.sh
 ```
 
